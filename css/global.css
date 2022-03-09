@@ -14,7 +14,11 @@ img {
 
 :root {
 
-    --primary-color: green;
+    --primary-color: #007FFF;
+    --background-color: #001933;
+    --secondary-color: #CCE5FF;
+    --accent-color: #003366;
+    --filler-color: #66B2FF;
     --div-padding: 100px;
 
 }
