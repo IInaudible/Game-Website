@@ -67,6 +67,9 @@ p {}
     grid-template-columns: repeat(4, 1fr);
 }
 
+
+
+
 /*NAV BAR*/
 nav {
     background-color: white;
@@ -100,6 +103,8 @@ a:visited {
     font-size: 35px;
 }
 
+
+
 /*MAIN PAGE*/
 
 main{
@@ -109,6 +114,9 @@ main{
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
 /*FOOTER*/
 footer {
     background-color: white;
