@@ -32,6 +32,7 @@ img {
     --secondary-color: #CCE5FF;
     --accent-color: #003366;
     --filler-color: #66B2FF;
+    --visited-color: #666;
 
 }
 
@@ -79,7 +80,7 @@ nav {
 
 #nav{
     text-decoration: none;
-    color: var(--secondary-color);
+    color: var(--visited-color);
     font-weight: bolder;
     list-style: none;
     display: flex;
@@ -91,7 +92,7 @@ nav h1 {
 }
 
 a:visited {
-    color: var(--secondary-color);
+    color: var(--visited-color);
 }
 
 #nav li a{
