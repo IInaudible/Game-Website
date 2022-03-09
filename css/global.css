@@ -1,5 +1,6 @@
 
 
+
 /*******************RESETTING DEFAULT*******************/
 * {
     margin: 0;
@@ -19,45 +20,41 @@ body {
 img {
     width: 100%;
     margin-bottom: -4px;
+
 }
 
 :root {
 
-    --primary-color: #007fff;
-
-    --secondary-color: #414a4c;
+    --primary-color: #007FFF;
+    --background-color: #001933;
+    --secondary-color: #CCE5FF;
+    --accent-color: #003366;
+    --filler-color: #66B2FF;
 
 }
 
-/*******************TEXT ELEMENTS*******************/
+
+
+
+/* TEXT ELEMENTS *******************************/
 
 h1 {
-    color: var(--primary-color);
-}
 
+}
 h2 {
 
 }
+h3 {}
+h4 {}
 
-h3 {
+p {}
 
-}
 
-h4 {
 
-}
-
-p {
-
-}
-
-/*******************GRIDS*******************/
-
+/* GRIDS *******************/
 .grid-2by {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-/*******************SAME THING*******************/
-    grid-template-columns: 1fr 1fr;
 }
 
 .grid-3by {
@@ -117,3 +114,4 @@ footer {
     background-color: white;
     border-top: black 1px solid;
 }
+
