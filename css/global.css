@@ -1,0 +1,60 @@
+
+
+/* RESETTING DEFAULT *****************/
+* {
+   margin:0;
+   padding:0;
+   box-sizing:border-box; 
+}
+
+img {
+    width:100%;
+    margin-bottom:-4px;
+}
+
+:root {
+
+    --primary-color: green;
+    --div-padding: 100px;
+
+}
+
+
+
+
+/* TEXT ELEMENTS *******************************/
+
+h1 {
+    color: var(--primary-color);
+}
+h2 {
+    background-color: var(--primary-color);
+}
+h3 {}
+h4 {}
+
+p {}
+
+
+
+/* GRIDS *******************/
+.grid-2by {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3by {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4by {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+
+
+
