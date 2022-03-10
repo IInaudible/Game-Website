@@ -70,6 +70,9 @@ p {}
     grid-template-columns: repeat(4, 1fr);
 }
 
+
+
+
 /*NAV BAR*/
 nav {
     background-color: white;
@@ -80,7 +83,6 @@ nav {
 
 #nav{
     text-decoration: none;
-    color: var(--visited-color);
     font-weight: bolder;
     list-style: none;
     display: flex;
@@ -88,20 +90,28 @@ nav {
 }
 
 nav h1 {
-    font-size: 50px
-}
-
-a:visited {
-    color: var(--visited-color);
+    display: block;
+    padding-left: 50px;
+    padding-top: 10px;
+    font-size: 35px;
+    color: var(--primary-color);
 }
 
 #nav li a{
     text-decoration: none;
     display: block;
-    padding: 20px;
+    padding-top: 10px;
     padding-right: 50px;
     font-size: 35px;
+    color:#666;
+    font-family: 'Bebas Neue', sans-serif;
 }
+
+#nav li a.active {
+    color: var(--primary-color);
+}
+
+
 
 /*MAIN PAGE*/
 
@@ -112,9 +122,54 @@ main{
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
 /*FOOTER*/
 footer {
     background-color: white;
     border-top: black 1px solid;
+    display: grid;
+    grid-template-columns:auto 1fr;
+    padding: .8em;
 }
 
+footer #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    padding-left: 5px;
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    color: #343434;
+}
+
+footer #social ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}
+
+footer #social ul li {
+    margin-left: 5px;
+} 
+
+footer #social ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.5s;
+    margin-right: 7.5px;
+}
+
+footer #social ul li a:hover {
+    margin-top: -10px;
+    border: 2px solid var(--filler-color);
+}
