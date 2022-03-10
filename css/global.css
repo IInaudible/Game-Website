@@ -100,18 +100,40 @@ nav h1 {
 #nav li a{
     text-decoration: none;
     display: block;
-    padding-top: 10px;
-    padding-right: 50px;
-    font-size: 35px;
+    padding: 20px;
+    font-size: 20px;
     color:#666;
-    font-family: 'Bebas Neue', sans-serif;
+    transition: all 500ms;
+}
+
+#nav li a:hover{
+    transform: scale(1.2);
+}
+
+#nav li a:hover + div {
+    transform: scaleX(1);
+    transform-origin: bottom center;
 }
 
 #nav li a.active {
     color: var(--primary-color);
 }
 
+#nav li {
+    position: relative;
+}
 
+#nav li > div {
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom center;
+    transition: transform 0.25s ease-out;
+}
 
 /*MAIN PAGE*/
 
