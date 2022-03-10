@@ -1,0 +1,13 @@
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    background-color: var(--primary-color);
+    border-radius: 7.5px;
+    color: white;
+    padding: .1em .5em;
+}
