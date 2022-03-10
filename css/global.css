@@ -131,9 +131,10 @@ footer {
     border-top: black 1px solid;
     display: grid;
     grid-template-columns:auto 1fr;
-    padding: .8em;
+    padding: 1em;
+    font-size: 10px;
+    padding-top: 1.15em;
 }
-
 footer #footer {
     display: flex;
     justify-content: center;
@@ -143,6 +144,8 @@ footer #footer {
     background-color: var(--primary-color);
     border-radius: 20px;
     color: #343434;
+    padding-right: .75em;
+    padding-left: .5em;
 }
 
 footer #social ul {
@@ -159,14 +162,15 @@ footer #social ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-decoration: none;
     border-radius: 20px;
     transition: 0.5s;
     margin-right: 7.5px;
+    font-size: 13px;
 }
 
 footer #social ul li a:hover {
