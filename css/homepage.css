@@ -1,4 +1,32 @@
 #top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--filler-color);
-    padding: 30
+    padding:100px;
+}
+
+.grid-2byr {
+    grid-gap: 5px;
+}
+
+#top img {
+    height: 400px;
+    width: 600px;
+}
+
+#bottom {
+    background-color: var(--accent-color);
+    padding: 50px;
+}
+
+#bottom div {
+    background-color: var(--secondary-color);
+    padding: 10px 30px 0 30px;
+}
+
+#bottom h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
