@@ -17,6 +17,7 @@ html, body {
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
+    background-color: var(--background-color);
 }
 
 img {
@@ -39,7 +40,7 @@ img {
 
 
 
-/* TEXT ELEMENTS *******************************/
+/*******************TEXT ELEMENTS *******************************/
 
 h1 {
     font-family: 'Bebas Neue', sans-serif;
@@ -159,14 +160,13 @@ footer h1, nav h1 {
 /*MAIN PAGE*/
 
 main{
-    background-color: white;   
+    background-color: var(--secondary-color);   
     width: 100%;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    padding:2em 1em;
 }
-
-
 
 /*FOOTER*/
 footer {
@@ -186,7 +186,7 @@ footer #footer {
     padding-left: 5px;
     background-color: var(--primary-color);
     border-radius: 20px;
-    color: var(--secondary-color);
+    color: white;
     padding-right: .75em;
     padding-left: .5em;
     font-size: 1em;
@@ -220,7 +220,7 @@ footer #social ul li a {
     width: 30px;
     height: 30px;
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: white;
     text-decoration: none;
     border-radius: 20px;
     transition: 0.5s;

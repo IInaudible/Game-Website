@@ -1,0 +1,48 @@
+:root {
+
+    --primary-color: #007FFF;
+    --background-color: #001933;
+    --secondary-color: #CCE5FF;
+    --accent-color: #003366;
+    --filler-color: #66B2FF;
+    --visited-color: #666;
+
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    background-color: var(--primary-color);
+    border-radius: 7.5px;
+    color: white;
+    padding: .1em .5em;
+}
+
+#user-entries {
+    margin: 1.5em;
+    background-color: var(--background-color);
+}
+
+.holder {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 1em;
+}
+
+.pfp img {
+    border: 2px solid var(--primary-color);
+    border-radius: 100px;
+    height: 41px;
+    width: 41px;
+}
+
+.user-entry h1{
+    color: white;
+    text-decoration: underline;
+    font-size: 30px;
+    padding-left: .5em;
+}
