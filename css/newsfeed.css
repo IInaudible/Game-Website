@@ -17,7 +17,7 @@
 
 .header h1 {
     background-color: var(--primary-color);
-    border-radius: 7.5px;
+    border-radius: 8px;
     color: white;
     padding: .1em .5em;
 }
@@ -25,12 +25,13 @@
 #user-entries {
     margin: 1.5em;
     background-color: var(--background-color);
+    padding: 1.5em;
+    border-radius: 8px;
 }
 
 .holder {
     display: grid;
     grid-template-columns: auto 1fr;
-    padding: 1em;
 }
 
 .pfp img {
@@ -40,6 +41,10 @@
     width: 41px;
 }
 
+#user-entry {
+    padding:1em 0 1.5em 0;
+}
+
 .user-entry h1{
     color: white;
     text-decoration: underline;
@@ -47,9 +52,29 @@
     padding-left: .5em;
 }
 
-.user-entry p {
+#user-entry p {
     color: white;
     font-size: 12.5px;
-    padding: .25em;
-    
+    line-height: 1.6em;
+}
+
+main #user-response ul li a {
+    background-color: var(--background-color);
+    color: white;
+    transition: 0.5s;
+    font-size: 13px;
+    text-decoration: none;
+    margin-right: 1em;
+}
+
+#user-response ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+}
+
+#user-response ul li {
+    color: white;
+    margin-right: 2em;
+    font-size: 12px;
 }
