@@ -46,3 +46,9 @@
     font-size: 30px;
     padding-left: .5em;
 }
+
+.user-entry p {
+    color: white;
+    font-size: 12.5px;
+    padding: .25em;
+}
