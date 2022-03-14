@@ -11,8 +11,8 @@
 }
 
 #top img {
-    height: 400px;
-    width: 600px;
+    height: 300px;
+    width: 400px;
 }
 
 #bottom {
@@ -23,6 +23,7 @@
 #bottom div {
     background-color: var(--secondary-color);
     padding: 10px 30px 0 30px;
+    border-radius: 30px;
 }
 
 #bottom h1 {

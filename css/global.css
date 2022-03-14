@@ -17,7 +17,10 @@ html, body {
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-color: var(--background-color);
+    background-color: #001933;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 img {
