@@ -1,8 +1,5 @@
-#top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+p {
+    color: white;
 }
 
 .grid-4byr {
@@ -11,6 +8,13 @@
 
 .grid-3by {
     grid-gap: 40px;
+}
+
+#top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
 }
 
 #top img {
@@ -29,3 +33,22 @@
     border-radius: 5px;
 }
 
+#news i {
+    color: var(--primary-color);
+    font-size: 80px;
+    transition: all 500ms;
+}
+
+#news i:hover {
+    transform: scale(1.2);
+}
+
+#news > div:nth-child(1) {
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+#news > div:nth-child(2) {
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
