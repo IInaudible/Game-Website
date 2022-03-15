@@ -1,33 +1,94 @@
+p {
+    color: white;
+}
+
+.grid-4byr {
+    grid-gap: 40px;
+}
+
+.grid-3by {
+    grid-gap: 40px;
+}
+
 #top {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--filler-color);
-    padding:100px;
-}
-
-.grid-2byr {
-    grid-gap: 5px;
+    padding: 0;
 }
 
 #top img {
     height: 300px;
-    width: 400px;
+    width: 500px;
 }
 
-#bottom {
+#about, #mission {
     background-color: var(--accent-color);
-    padding: 50px;
-}
-
-#bottom div {
-    background-color: var(--secondary-color);
     padding: 10px 30px 0 30px;
-    border-radius: 30px;
+    border-radius: 5px;
 }
 
-#bottom h1 {
+#sections div {
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+
+#news i {
+    color: var(--filler-color);
+    font-size: 80px;
+    transition: all 500ms;
+}
+
+#news i:hover {
+    transform: scale(1.2);
+}
+
+#news > div:nth-child(1) {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    padding: 30px 0 30px 0;
+}
+
+#news > div:nth-child(2) {
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+#lead i {
+    color: var(--filler-color);
+    font-size: 80px;
+    transition: all 500ms;
+}
+
+#lead i:hover {
+    transform: scale(1.2);
+}
+
+#lead > div:nth-child(1) {
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+#lead > div:nth-child(2) {
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+#source i {
+    color: var(--filler-color);
+    font-size: 80px;
+    transition: all 500ms;
+}
+
+#source i:hover {
+    transform: scale(1.2);
+}
+
+#source > div:nth-child(1) {
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+#source > div:nth-child(2) {
+    text-align: center;
+    padding: 0 10px 0 10px;
 }
