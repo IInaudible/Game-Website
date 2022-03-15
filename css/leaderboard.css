@@ -2,7 +2,7 @@
     grid-gap: 20px;
 }
 
-li {
+#names li, #scores li {
     margin-top: 15px;
 }
 
@@ -20,12 +20,12 @@ h3 {
 
 #names {
     color: white;
-    padding: 60px 0 0 160px;
+    padding: 60px 0 60px 160px;
 }
 
 #scores {
     color: white;
-    padding: 60px 0 0 150px;
+    padding: 60px 0 60px 150px;
 }
 
 #names ol li:first-child i {

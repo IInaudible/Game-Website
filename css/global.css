@@ -99,7 +99,7 @@ p {
 
 .grid-3byr {
     display: grid;
-    grid-template-rows: auto auto 1fr;
+    grid-template-rows: auto auto auto;
 }
 
 .grid-4byr {
