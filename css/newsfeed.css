@@ -32,6 +32,11 @@
     object-fit: cover;
 }
 
+.user-entry {
+    display:flex;
+    align-items: center;
+}
+
 .user-entry h1{
     color: white;
     text-decoration: underline;
