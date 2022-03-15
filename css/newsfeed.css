@@ -1,13 +1,3 @@
-:root {
-
-    --primary-color: #007FFF;
-    --background-color: #001933;
-    --secondary-color: #CCE5FF;
-    --accent-color: #003366;
-    --filler-color: #66B2FF;
-    --visited-color: #666;
-
-}
 
 .header {
     display: flex;
@@ -22,7 +12,7 @@
     padding: .1em .5em;
 }
 
-#user-entries {
+.user-entries {
     margin: 1.5em;
     background-color: var(--background-color);
     padding: 1.5em;
@@ -37,12 +27,9 @@
 .pfp img {
     border: 2px solid var(--primary-color);
     border-radius: 100px;
-    height: 41px;
-    width: 41px;
-}
-
-#user-entry {
-    padding:1em 0 1.5em 0;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
 }
 
 .user-entry h1{
@@ -52,29 +39,30 @@
     padding-left: .5em;
 }
 
-#user-entry p {
+.user-post p {
     color: white;
     font-size: 12.5px;
     line-height: 1.6em;
+    padding:1.5em 0;
 }
 
-main #user-response ul li a {
+.user-response ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+}
+
+.user-response ul li {
+    color: white;
+    margin-right: 2em;
+    font-size: 12px;
+}
+
+.user-response ul li a {
     background-color: var(--background-color);
     color: white;
     transition: 0.5s;
     font-size: 13px;
     text-decoration: none;
     margin-right: 1em;
-}
-
-#user-response ul {
-    display: flex;
-    justify-content: left;
-    list-style: none;
-}
-
-#user-response ul li {
-    color: white;
-    margin-right: 2em;
-    font-size: 12px;
 }

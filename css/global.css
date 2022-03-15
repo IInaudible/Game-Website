@@ -152,7 +152,7 @@ footer h1, nav h1 {
     
 }
 
-#nav li a{
+#nav li a {
     text-decoration: none;
     display: block;
     padding: 16px;
@@ -213,23 +213,21 @@ footer {
     background-color: white;
     border-top: black 1px solid;
     display: grid;
-    grid-template-columns:auto 1fr auto;
+    grid-template-columns:1fr 3fr 1fr;
     padding: 1em;
     padding-top: 1.15em;
 }
 
-footer #footer {
+footer #copyright {
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
-    padding-left: 5px;
     background-color: var(--primary-color);
-    border-radius: 20px;
-    color: var(--secondary-color);
-    padding-right: .75em;
-    padding-left: .5em;
-    font-size: 1em;
+    border-radius: 50px;
+    color: white;
+    padding: 0.5em 1.5em;
+    font-size: 0.8em;
 }
 
 #logo-footer {
