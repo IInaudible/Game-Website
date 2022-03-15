@@ -17,7 +17,8 @@ html, body {
 body {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-color: var(--background-color);
+    background-image: url(https://images.unsplash.com/photo-1510074232337-05d50fa189ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    background-size:cover;
 }
 
 img {
@@ -40,7 +41,7 @@ img {
 
 
 
-/*******************TEXT ELEMENTS *******************************/
+/* TEXT ELEMENTS *******************************/
 
 h1 {
     font-family: 'Bebas Neue', sans-serif;
@@ -50,17 +51,29 @@ h2 {
 }
 
 h3 {
-
+    font-family: 'Comfortaa', sans-serif;
 }
 
 h4 {
-
+    font-family: 'Comfortaa', sans-serif;
 }
 
 p {
     font-family: 'Comfortaa', sans-serif;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1 {
+    background-color: var(--primary-color);
+    border-radius: 7.5px;
+    color: white;
+    padding: .1em .5em;
+}
 
 
 /* GRIDS *******************/
@@ -82,6 +95,16 @@ p {
 .grid-2byr {
     display: grid;
     grid-template-rows: auto 1fr;
+}
+
+.grid-3byr {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+}
+
+.grid-4byr {
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr;
 }
 
 .grid-gap {
@@ -159,7 +182,7 @@ footer h1, nav h1 {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 3px;
     bottom: 0;
     left: 0;
     background-color: #0087ca;
@@ -170,13 +193,20 @@ footer h1, nav h1 {
 /*MAIN PAGE*/
 
 main{
-    background-color: var(--secondary-color);   
-    width: 100%;
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    padding:2em 1em;
+    max-width:none;
+    background-color:#007FFF99;
+    padding:0;
 }
+
+#page {
+    max-width:900px;
+    background-color: #CCE5FF99;
+    margin:0 auto;
+    height:100%;
+    padding:3em;
+}
+
+
 
 /*FOOTER*/
 footer {
@@ -196,7 +226,7 @@ footer #footer {
     padding-left: 5px;
     background-color: var(--primary-color);
     border-radius: 20px;
-    color: white;
+    color: var(--secondary-color);
     padding-right: .75em;
     padding-left: .5em;
     font-size: 1em;
@@ -209,6 +239,7 @@ footer #footer {
 
 #logo-footer img {
     height: 35px;
+    border-radius: 20px;
     width: auto;
 }
 
@@ -229,7 +260,7 @@ footer #social ul li a {
     width: 30px;
     height: 30px;
     background-color: var(--primary-color);
-    color: white;
+    color: var(--secondary-color);
     text-decoration: none;
     border-radius: 20px;
     transition: 0.5s;

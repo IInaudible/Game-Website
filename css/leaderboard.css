@@ -1,0 +1,41 @@
+#page {
+    grid-gap: 20px;
+}
+
+li {
+    margin-top: 15px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+#title {
+    text-align: center;
+}
+
+#board {
+    background-color: var(--accent-color);
+}
+
+#names {
+    color: white;
+    padding: 60px 0 0 160px;
+}
+
+#scores {
+    color: white;
+    padding: 60px 0 0 150px;
+}
+
+#names ol li:first-child i {
+    color: gold;
+}
+
+#names ol li:nth-child(2) i {
+    color: silver;
+}
+
+#names ol li:nth-child(3) i {
+    color: #CD7F32;
+}
