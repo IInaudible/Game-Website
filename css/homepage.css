@@ -34,7 +34,7 @@ p {
 }
 
 #news i {
-    color: var(--primary-color);
+    color: var(--filler-color);
     font-size: 80px;
     transition: all 500ms;
 }
@@ -49,6 +49,46 @@ p {
 }
 
 #news > div:nth-child(2) {
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+#lead i {
+    color: var(--filler-color);
+    font-size: 80px;
+    transition: all 500ms;
+}
+
+#lead i:hover {
+    transform: scale(1.2);
+}
+
+#lead > div:nth-child(1) {
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+#lead > div:nth-child(2) {
+    text-align: center;
+    padding: 0 10px 0 10px;
+}
+
+#source i {
+    color: var(--filler-color);
+    font-size: 80px;
+    transition: all 500ms;
+}
+
+#source i:hover {
+    transform: scale(1.2);
+}
+
+#source > div:nth-child(1) {
+    text-align: center;
+    padding: 30px 0 30px 0;
+}
+
+#source > div:nth-child(2) {
     text-align: center;
     padding: 0 10px 0 10px;
 }

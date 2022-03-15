@@ -51,11 +51,11 @@ h2 {
 }
 
 h3 {
-
+    font-family: 'Comfortaa', sans-serif;
 }
 
 h4 {
-
+    font-family: 'Comfortaa', sans-serif;
 }
 
 p {
@@ -95,6 +95,11 @@ p {
 .grid-2byr {
     display: grid;
     grid-template-rows: auto 1fr;
+}
+
+.grid-3byr {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
 }
 
 .grid-4byr {
