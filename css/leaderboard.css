@@ -16,6 +16,7 @@ h3 {
 
 #board {
     background-color: var(--accent-color);
+    border-radius: 10px;
 }
 
 #names {
