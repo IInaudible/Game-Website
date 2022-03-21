@@ -1,0 +1,32 @@
+#page .video img{
+    object-fit: cover;
+}
+
+#page .video .play-button {
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#page .video {
+    position: relative;
+}
+
+#page .video .play-button a {
+    color: white;
+}
+
+#page .header {
+    margin-top: 10px;
+    color: white;
+}
+
+#page i {
+    filter: drop-shadow(2px 2px 3px #0009);
+}
