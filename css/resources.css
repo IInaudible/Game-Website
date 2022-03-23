@@ -21,6 +21,11 @@
 
 #page .video .play-button a {
     color: white;
+    transition: .5s;
+}
+
+#page .video .play-button a:hover{
+    font-size: 100px;
 }
 
 #page .header {
