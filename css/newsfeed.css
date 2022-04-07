@@ -1,3 +1,11 @@
+.create-forum-button {
+    display: flex;
+    justify-content: right;
+}
+
+.create-forum-button a{
+    color: var(--accent-color);
+}
 
 .header {
     display: flex;
