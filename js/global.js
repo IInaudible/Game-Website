@@ -13,7 +13,7 @@ $(document).ready(function() {
                 <li><a href="index.html">Home</a><div></div></li>
                 <li><a href="newsfeed.html">News Feed</a><div></div></li>
                 <li><a href="leaderboard.html">Leaderboard</a><div></div></li>
-                <li><a href="resources.html" class="active">Resources</a><div></div></li>
+                <li><a href="resources.html">Resources</a><div></div></li>
             </ul>
         </div>
     `;
