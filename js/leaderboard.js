@@ -72,35 +72,59 @@ let users = [
         score: 42
     },
     {
-        username: 'earningsa',
-        score:64
+        username: 'passivea',
+        score: 40
     },
     {
-        username: 'earningsa',
-        score:64
+        username: 'playoffsa',
+        score: 37
     },
     {
-        username: 'earningsa',
-        score:64
+        username: 'raciala',
+        score: 35
     },
     {
-        username: 'earningsa',
-        score:64
+        username: 'rattya',
+        score: 31
     },
     {
-        username: 'earningsa',
-        score:64
+        username: 'recordinga',
+        score: 30
     },
     {
-        username: 'earningsa',
-        score:64
-    },
-    {
-        username: 'earningsa',
-        score:64
-    },
-    {
-        username: 'earningsa',
-        score:64
-    },
+        username: 'resemblea',
+        score: 27
+    }
 ]
+
+$(document).ready(function() {
+    // write a for loop that loops over the array and gives the first 3 users a trophy template and for the 
+    //rest give them a regular template
+
+    // loop over the array of users
+    for (let i = 0; i < users.length; i += 1) {
+       
+        // if i is less than 3
+        if (i < 3) { 
+            let userTrophyTemp = `
+                <div class="individual">
+                    <div><p>${users[i].username}</p><i class="fas fa-trophy"></i></div>
+                    <div>${users[i].score}</div>
+                </div>
+            `;
+
+            $('#user-scores').append(userTrophyTemp);
+        // otherwise
+        } else {
+            let userRegularTemp = `
+                <div class="individual">
+                    <div><p>${users[i].username}</p></div>
+                    <div>${users[i].score}</div>
+                </div>
+            `;
+
+            $('#user-scores').append(userRegularTemp);
+        }
+    }
+});   
+    
