@@ -12,13 +12,15 @@ h3 {
 
 #title {
     text-align: center;
+    color: white;
+    margin: 20px 0 30px 0;
 }
 
 #board {
     background-color: var(--accent-color);
     border-radius: 10px;
 }
-
+/* 
 #names {
     color: white;
     padding: 60px 0 60px 160px;
@@ -27,16 +29,43 @@ h3 {
 #scores {
     color: white;
     padding: 60px 0 60px 150px;
+} */
+
+#user-scores {
+    color: white;
+    margin: 0 0 30px 0;
 }
 
-#names ol li:first-child i {
+#user-scores .individual:nth-child(2) div i {
     color: gold;
+    margin: 0 0 0 10px;
 }
 
-#names ol li:nth-child(2) i {
+#user-scores .individual:nth-child(3) div i {
     color: silver;
+    margin: 0 0 0 10px;
 }
 
-#names ol li:nth-child(3) i {
+#user-scores .individual:nth-child(4) div i {
     color: #CD7F32;
+    margin: 0 0 0 10px;
 }
+
+.individual {
+    display: flex;
+    justify-content: space-between;
+}
+
+.individual > div {
+    display: flex;
+}
+
+.individual div:nth-child(2) {
+    margin: 0px 160px 0 0;
+}
+
+.individual {
+    margin: 10px 0 15px 160px;
+
+}
+

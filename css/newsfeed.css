@@ -3,8 +3,9 @@
     justify-content: right;
 }
 
-.create-forum-button a{
+#create-forum a p{
     color: var(--accent-color);
+    font-family: 'Comfortaa', sans-serif;
 }
 
 .header {
@@ -77,5 +78,6 @@
     transition: 0.5s;
     font-size: 13px;
     text-decoration: none;
-    margin-right: 1em;
+    margin-right: 1em; 
 }
+
