@@ -31,16 +31,6 @@ textarea {
 }
 
 .submit-button button {
-    background-color: var(--primary-color);
-    border: 2px var(--primary-color) solid;
-    border-radius: 8px;
     height: 35px;
-    width: 100px;
-    transition: .1s;
-    color: white;
-    font-family: 'Comfortaa', sans-serif;;
-}
-
-.submit-button button:hover {
-    border: 2px white solid;
+    width: 70px;
 }
