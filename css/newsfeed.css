@@ -43,13 +43,24 @@
 
 .user-entry {
     display:flex;
-    align-items: center;
+    justify-content: left;
 }
 
 .user-entry h1{
     color: white;
-    text-decoration: underline;
     font-size: 30px;
+    margin: 10px 0 0 0;
+}
+
+.username {
+    display: flex;
+    align-items: center;
+}
+
+.username h1{
+    color: white;
+    text-decoration: underline;
+    font-size: 40px;
     padding-left: .5em;
 }
 
@@ -57,7 +68,7 @@
     color: white;
     font-size: 12.5px;
     line-height: 1.6em;
-    padding:1.5em 0;
+    padding:10px 0 15px 0;
 }
 
 .user-response ul {
