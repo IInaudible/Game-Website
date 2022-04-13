@@ -94,10 +94,15 @@ let users = [
     {
         username: 'resemblea',
         score: 27
+    },
+    {
+        username: 'ipsum',
+        score: 23
     }
 ]
 
 $(document).ready(function() {
+    $('#leaderboard a').css('color', '#007FFF')
     // write a for loop that loops over the array and gives the first 3 users a trophy template and for the 
     //rest give them a regular template
 
@@ -108,7 +113,7 @@ $(document).ready(function() {
         if (i < 3) { 
             let userTrophyTemp = `
                 <div class="individual">
-                    <div><p>${users[i].username}</p><i class="fas fa-trophy"></i></div>
+                    <div><p>${i + 1}${'. '}${users[i].username}</p><i class="fas fa-trophy"></i></div>
                     <div>${users[i].score}</div>
                 </div>
             `;
@@ -118,7 +123,7 @@ $(document).ready(function() {
         } else {
             let userRegularTemp = `
                 <div class="individual">
-                    <div><p>${users[i].username}</p></div>
+                    <div><p>${i + 1}${'. '}${users[i].username}</p></div>
                     <div>${users[i].score}</div>
                 </div>
             `;

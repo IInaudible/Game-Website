@@ -10,10 +10,10 @@ $(document).ready(function() {
             </div>               
             <div>
             <ul id="nav">
-                <li><a href="index.html">Home</a><div></div></li>
-                <li><a href="newsfeed.html">News Feed</a><div></div></li>
-                <li><a href="leaderboard.html">Leaderboard</a><div></div></li>
-                <li><a href="resources.html">Resources</a><div></div></li>
+                <li id="home-page"><a href="index.html">Home</a><div></div></li>
+                <li id="news-feed"><a href="newsfeed.html">News Feed</a><div></div></li>
+                <li id="leaderboard"><a href="leaderboard.html">Leaderboard</a><div></div></li>
+                <li id="resources"><a href="resources.html">Resources</a><div></div></li>
             </ul>
         </div>
     `;
