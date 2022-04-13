@@ -58,7 +58,7 @@
 }
 
 #sourcesection {
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 .resource img {
@@ -91,4 +91,8 @@
 
 .resource:hover {
     transform: scale(1.1);
+}
+
+.article-title {
+    margin: 0 0 10px 0;
 }
