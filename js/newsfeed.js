@@ -2,7 +2,7 @@ let userPosts = [
     {
         img: './img/otter-pfp.png',
         imgAlt: 'otter-pfp',
-        username: 'Otter_Lover702',
+        username: 'OtterLover702',
         title: 'Save the Otters',
         post: `The cutest sea critters are otters. I can't get enough of them, and it hurts to see them being affected by improper disposal of plastic waste,
         and even worse they're not the only ones. The amount of space that the waste takes up is unreal. The amount of creatures affected by it is even
@@ -11,19 +11,19 @@ let userPosts = [
         comments: [
             {
                 img: './img/trash.jpg',
-                username: 'Trash_Hater934',
+                username: 'TrashHater934',
                 profLink: '',
                 post: `Good job!`
             },
             {
                 img: './img/duck.png',
-                username: 'Duck_Saver',
+                username: 'DuckSaver',
                 profLink: '',
                 post: `The ducks like this`
             },
             {
                 img: './img/bear.png',
-                username: 'Michael_J',
+                username: 'MichaelJ',
                 profLink: '',
                 post: 'I like Pudding'
             },
@@ -31,7 +31,7 @@ let userPosts = [
                 img: './img/penguin.png',
                 username: 'BigPenguin',
                 profLink: '',
-                post: '@Michael_J Who asked'
+                post: '@MichaelJ Who asked'
             }
         ]
         
@@ -39,7 +39,7 @@ let userPosts = [
     {
         img: './img/trash.jpg',
         imgAlt: 'trash-pfp',
-        username: 'Trash_Hater934',
+        username: 'TrashHater934',
         title: 'Stop Littering',
         post: `I see people looking at the bigger picture, blaming waste management companies for how they dispose of their waste. Let's take a look at the 
         little picture. You, if you're reading this and don't litter good for you that is an accomplishment. However there is a percentage of people out there reading
@@ -58,7 +58,7 @@ let userPosts = [
     {
         img: './img/duck.png',
         imgAlt: 'duck-pfp',
-        username: 'Duck_Saver',
+        username: 'DuckSaver',
         title: 'Ducks Need Help',
         post: `Ducks are drowing in plastic. LITERALLY! Sign this petition to stop plastic pollution in the ocean and help save the ducks. Even it's a small amount
         of their population being affected, zero ducks should be getting hurt or dying to plastic pollution. There is no reason not to sign this petition if it
@@ -86,17 +86,20 @@ $(document).ready(function() {
 
     for (let i = 0; i < userPosts.length; i += 1) {
     let userPostsTemplate = `
+        <div class="user-entries">
             <div class="holder">
                 <div> 
                     <div class="pfp"><img src="${userPosts[i].img}" alt="${userPosts[i].imgAlt}"></div>
                 </div>
-                <div class="user-entry">
-                    <h1>${userPosts[i].title}</h1>
+                <div class="username">
+                    <h1>${userPosts[i].username}</h1>
                 </div>
             </div>
             <div class="user-post">
-                <p>${userPosts[i].post}
-                </p>
+                <div class="user-entry">
+                    <h1>${userPosts[i].title}</h1>
+                </div>
+                <p>${userPosts[i].post}</p>
             </div>
             <div class="user-response">
                 <ul>
@@ -104,8 +107,9 @@ $(document).ready(function() {
                     <li><a href="#"><i class="fa-solid fa-message"></i></a>${userPosts[i].comments.length}</li>
                 </ul>
             </div>
+        </div>
     `;
-    $('.user-entries').append(userPostsTemplate);
+    $('#page').append(userPostsTemplate);
     }
 });
 
