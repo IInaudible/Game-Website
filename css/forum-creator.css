@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
 .title {
     display: flex;
     justify-content: center;
@@ -30,8 +32,15 @@ textarea {
 
 .submit-button button {
     background-color: var(--primary-color);
-    border: 1px var() solid;
+    border: 2px var(--primary-color) solid;
     border-radius: 8px;
-    height: 50px;
+    height: 35px;
     width: 100px;
+    transition: .1s;
+    color: white;
+    font-family: 'Comfortaa', sans-serif;;
+}
+
+.submit-button button:hover {
+    border: 2px white solid;
 }
