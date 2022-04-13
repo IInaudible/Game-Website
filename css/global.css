@@ -75,6 +75,23 @@ p {
     padding: .1em .5em;
 }
 
+/* Buttons */
+
+button {
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+    transition: all 300ms;
+}
+
+button:hover {
+    background-color: #001FFF;
+    cursor: pointer;
+}
+button:active {
+    transform: scale(1.1);
+}
 
 /* GRIDS *******************/
 .grid-2by {
@@ -192,6 +209,12 @@ footer h1, nav h1 {
     transition: transform 0.25s ease-out;
 }
 
+#signin {
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
 /*MAIN PAGE*/
 
 main{
@@ -208,8 +231,67 @@ main{
     padding:3em;
 }
 
+/* Modal */
 
+#modal-In, #modal-Up {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(10, 10, 10, .5);
+    z-index: 1;
+    left: 0;
+    top: 0;
+    justify-content: flex-end;
+}
 
+#modal-content {
+    display: grid;
+    border-radius: 8px;
+    grid-template-rows: 1fr auto;
+    position: relative;
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    margin: 3% 1% 0 0;
+}
+
+#modal-buttons {
+    display: flex;
+    justify-content: end;
+}
+
+#modal-texts label {
+    margin: 20px 0 0 47px;
+}
+
+#modal-texts input {
+    font-size: 16px;
+    width: 80%;
+    height: 25%;
+    margin-left: 47px;
+    border: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+#modal-buttons p {
+    color: black;
+    font-size: 13px;
+    padding: 11px 0 0 10px;
+}
+
+#login, #signup {
+    margin: 0 50px 7px 40px;
+    height: 35px;
+    width: 60px;
+}
+
+#signup-modal, #login-modal {
+    padding: 0 0 10px 3px;
+    background: none;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
 /*FOOTER*/
 footer {
     background-color: white;
