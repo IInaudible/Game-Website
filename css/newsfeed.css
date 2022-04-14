@@ -1,3 +1,7 @@
+.title h1{
+    letter-spacing: 1px;
+}
+
 .create-forum-button {
     display: flex;
     justify-content: right;
