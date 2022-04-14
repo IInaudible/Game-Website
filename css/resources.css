@@ -94,5 +94,14 @@
 }
 
 .article-title {
-    margin: 0 0 10px 0;
+    margin: 10px 0 10px 0;
+    display: flex;
+    justify-content: center; 
+}
+
+.article-title h1 {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: white;
+    padding: 5px 20px;
 }
