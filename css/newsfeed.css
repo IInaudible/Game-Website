@@ -97,3 +97,36 @@
     margin-right: 1em; 
 }
 
+#posts {
+    margin-top: 20px;
+    width: 825px;
+    height: 600px;
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0000; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--background-color); 
+}
+
+#Patch {
+    margin-top: 20px;
+}
+
+#Notes {
+    width: 800px;
+    height: 300px;
+    overflow: auto;
+    margin-top: 20px;
+}
