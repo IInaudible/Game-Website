@@ -81,6 +81,37 @@ let userPosts = [
     },
 ];
 
+let patchNotes = [
+    {
+        title: 'Bug Fix',
+        post: `Fixed hitbox rotating on its own`
+    },
+    {
+        title: 'Bug Fix',
+        post: `Fixed hitbox rotating on its own`
+    },
+    {
+        title: 'Bug Fix',
+        post: `Fixed hitbox rotating on its own`
+    },
+    {
+        title: 'HELP',
+        post: `SOMEBODY HELP ME THERE IS TOO MUCH WORK THEY ARE OVERLOADING ME AND IM NOT BEING PAID!!!!!!!!!!!`
+    },
+    {
+        title: 'Bug Fix',
+        post: `Fixed hitbox rotating on its own`
+    },
+    {
+        title: 'Bug Fix',
+        post: `Fixed hitbox rotating on its own`
+    },
+    {
+        title: 'Bug Fix',
+        post: `Fixed hitbox rotating on its own`
+    },
+]
+
 $(document).ready(function() {
     $('#news-feed a').css('color', '#007FFF')
 
@@ -109,7 +140,20 @@ $(document).ready(function() {
             </div>
         </div>
     `;
-    $('#page').append(userPostsTemplate);
+    $('#posts').append(userPostsTemplate);
+    }
+    for (let i = 0; i < patchNotes.length; i += 1) {
+        let patchNotesTemplate = `
+            <div class="user-entries">
+                <div class="user-post">
+                    <div class="user-entry">
+                        <h1>${patchNotes[i].title}</h1>
+                    </div>
+                    <p>${patchNotes[i].post}</p>
+                </div>
+            </div>
+        `;
+        $('#Notes').append(patchNotesTemplate);
     }
 });
 
