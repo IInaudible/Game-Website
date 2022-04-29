@@ -13,14 +13,11 @@
     color: white;
     padding: .1em .5em;
 }
-.username {
-    margin:2em 2em 0em 0em;
-}
 
 .profile-picture {
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     width: auto;
     height: auto;
 }
@@ -28,16 +25,27 @@
 .profile-picture img{
         border: 2px solid var(--primary-color);
         border-radius: 200px;
-        height: 260px;
-        width: 260px;
+        height: 300px;
+        width: 300px;
         object-fit: cover;
+}
+
+.username {
+    margin: 0px 50px 0px 0px
+
+}
+
+.bio {
+    margin: 0px 0px 0px 50px
 }
 
 .user-info{
     display: flex;
-    justify-content: right;
-    align-items: flex-end;
-    margin: 0 0 0 30px;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    margin: 30px 0px 0px 0px;
 }
 
 .user-info label {
@@ -53,7 +61,7 @@
 .save-button {
     display: flex;
     justify-content: right;
-    margin: 1em 1em 0em 0em;
+    margin: 20px 0 0 0;
 }
 
 .save-button button {
@@ -69,4 +77,30 @@
 
 .save-button button:hover {
     border: 2px white solid;
+}
+
+.title-activity {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 50px 0 20px 0;
+}
+
+.title-activity h1 {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    color: white;
+    padding: .1em .5em;
+}
+
+.recent-activity {
+    background-color: var(--background-color);
+    height: auto;
+    width: 800px;
+    margin: 0 0 0 0;
+    padding: 0 30px 31px 30px;
+}
+
+.activity1 h2 {
+    color: white;
 }
