@@ -14,7 +14,7 @@ $(document).ready(function() {
                 <li id="news-feed"><a href="newsfeed.html">News Feed</a><div></div></li>
                 <li id="leaderboard"><a href="leaderboard.html">Leaderboard</a><div></div></li>
                 <li id="resources"><a href="resources.html">Resources</a><div></div></li>
-                <button id="signin">Login</button>
+                <button id="signin"><h1>Login</h1></button>
             </ul>
         </div>
     `;
