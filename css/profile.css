@@ -93,14 +93,47 @@
     padding: .1em .5em;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0000; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--background-color); 
+}
+
 .recent-activity {
     background-color: var(--background-color);
-    height: auto;
+    height: 550px;
     width: 800px;
     margin: 0 0 0 0;
     padding: 0 30px 31px 30px;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+.activity1 img {
+    width: 730px;
+    height: auto;
 }
 
 .activity1 h2 {
     color: white;
+}
+
+h2 {
+    font-size: 31px;
+    color: white;
+    margin: 20px 0px 0px 20px;
+}
+
+.activities {
+
 }

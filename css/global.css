@@ -159,25 +159,24 @@ nav {
 }
 
 #logo-nav img {
-    height: 35px;    
+    height: 45px;    
 }
 
 footer h1, nav h1 {
     display: block;
-    font-size: 15px;
+    font-size: 23px;
     color: var(--primary-color);
     line-height: 1em;
-    margin-top: 3px;
-    
 }
 
 #nav li a {
     text-decoration: none;
     display: block;
     padding: 16px;
-    font-size: 15px;
+    font-size: 23px;
     color:#666;
     transition: all 500ms;
+    margin-top: 5px;
 }
 
 #nav li a:hover{
@@ -210,9 +209,15 @@ footer h1, nav h1 {
 }
 
 #signin {
-    padding: 5px 5px;
-    border-radius: 5px;
+    padding: 5px 15px;
+    border-radius: 10px;
     margin: 10px;
+}
+
+#signin h1 {
+    color: white;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 12px;
 }
 
 /*MAIN PAGE*/
