@@ -315,7 +315,7 @@ footer #copyright {
     border-radius: 50px;
     color: white;
     padding: 0.5em 0.5em;
-    font-size: 0.8em;
+    font-size: .85em;
 }
 
 #logo-footer {
@@ -324,7 +324,7 @@ footer #copyright {
 }
 
 #logo-footer img {
-    height: 35px;
+    height: 45px;
     width: auto;
 }
 
@@ -342,15 +342,15 @@ footer #social ul li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     text-decoration: none;
     border-radius: 20px;
     transition: 0.5s;
     margin-right: 7.5px;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 footer #social ul li a:hover {
