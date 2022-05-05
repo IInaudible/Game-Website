@@ -25,14 +25,14 @@ $(document).ready(function() {
             <div id="modal-content">
                 <div id="modal-texts">
                     <br>
-                    <label>Username:</label>
+                    
                     <br>
-                    <input type="user" placeholder="Username" required>
+                    <input id="user1" type="user" placeholder="Username" required>
                     <br>
                     <br>
-                    <label>Password:</label>
+                   
                     <br>
-                    <input type="password" placeholder="Password" required>
+                    <input id="pass1" type="password" placeholder="Password" required>
                 </div>
                 <div id="modal-buttons">
                     <p>Don't have an account?</p>
@@ -46,15 +46,15 @@ $(document).ready(function() {
         <div id="modal-Up">
             <div id="modal-content">
                 <div id="modal-texts">
+
+                   
                     <br>
-                    <label>Username:</label>
+                    <input id="user2" type="user" placeholder="Username" required>
                     <br>
-                    <input type="user" placeholder="Username" required>
+
+                    
                     <br>
-                    <br>
-                    <label>Password:</label>
-                    <br>
-                    <input type="password" placeholder="Password" required>
+                    <input id="pass2" type="password" placeholder="Password" required>
                 </div>
                 <div id="modal-buttons">
                     <p>Already have an account?</p>
@@ -113,9 +113,25 @@ $(document).ready(function() {
         }
     });
 
-
+    $('#login').on('click', function() {
+        let user = $('#user1').val()
+        let pass = $('#pass1').val()
+        for (let i = 0; i < localStorage.length; i++) {
+            if (user === localStorage.key(i)) {
+                if (pass === localStorage.getItem(user)) {
+                    console.log("logged in")
+                }
+            }
+        }
+    });
     
+    function credentials(list) {
+        for (let i = 0; i < Object.keys(list).length; i++) {
+            localStorage.setItem(Object.keys(list)[i], Object.values(list)[i]);
+        }
+    };
+    var testObject = {'test': 'test123'};
+    credentials(testObject);
 
 });
-
 
