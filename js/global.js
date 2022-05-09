@@ -25,12 +25,9 @@ $(document).ready(function() {
             <div id="modal-content">
                 <div id="modal-texts">
                     <br>
-                    
                     <br>
                     <input id="user1" type="user" placeholder="Username" required>
                     <br>
-                    <br>
-                   
                     <br>
                     <input id="pass1" type="password" placeholder="Password" required>
                 </div>
@@ -46,13 +43,10 @@ $(document).ready(function() {
         <div id="modal-Up">
             <div id="modal-content">
                 <div id="modal-texts">
-
-                   
+                    <br>
                     <br>
                     <input id="user2" type="user" placeholder="Username" required>
                     <br>
-
-                    
                     <br>
                     <input id="pass2" type="password" placeholder="Password" required>
                 </div>
@@ -124,14 +118,26 @@ $(document).ready(function() {
             }
         }
     });
-    
-    function credentials(list) {
-        for (let i = 0; i < Object.keys(list).length; i++) {
-            localStorage.setItem(Object.keys(list)[i], Object.values(list)[i]);
-        }
-    };
-    var testObject = {'test': 'test123'};
-    credentials(testObject);
 
+    $('#signup').on('click', function() {
+        let user = $('#user2').val()
+        let pass = $('#pass2').val()
+        let taken = false
+        for (let i = 0; i < localStorage.length; i++) {
+            if (user === localStorage.key(i)) {
+                console.log("name taken")
+                taken = true
+            }
+        }
+        if (taken) {
+
+        }else if (pass.length < 4) {
+            console.log("password needs to be longer")
+        } else {
+            console.log("account created")
+            localStorage.setItem(user, pass);
+        }
+    });
+    localStorage.setItem("test", "test");
 });
 
